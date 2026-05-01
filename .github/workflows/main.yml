@@ -32,14 +32,7 @@ jobs:
 
       - name: Step 1 - Create new Ethereum Identity
         run: node scripts/createNewEthereumIdentity.js
-      - name: Install script dependencies
-        run: |
-          cd scripts
-          npm install
 
-      - name: Step 2 - Create new Ethereum Identity
-        run: node scripts/createNewEthereumIdentity.js
-
-      - name: Step 3 - Link Human to Agent
+      - name: Step 2 - Link Human to Agent
         run: |
           node scripts/manualLinkHumanToAgent.js --challenge '{"name": "jalu017", "description": "jalu017 AI Agent"}'
